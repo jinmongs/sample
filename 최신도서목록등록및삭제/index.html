@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h2>추천 도서</h2>
+        </div>
+        </div>
+        <div id="addlist">
+            <form action="#">
+                <button id="addmenu" onclick="addbtn()">도서추가</button>
+                    <div class="addbook">
+                        <div>
+                            <p><label for="">책제목</label><input type="text"></p>
+                            <p><label for="">저자</label><input type="text"></p>
+                            <p><label for="">출판사</label><input type="text"></p>
+                            <p><label for="">출판일</label><input type="text"></p>
+                            <p><label for="">가격</label><input type="text"></p>
+                            <p><label for="">요약</label><input type="text"></p>
+                            <p><label for="">표지</label><input type="text"></p>
+                        </div>
+                        <div>
+                            <button type="button">추가</button>
+                            <button type="reset">취소</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </header>
+    <div id="content">
+        <ul>
+            <li>
+                <div>
+                    <span><img src="./images/book1.jpg" alt=""></span>
+                    <p>엄마의 책갈피 인문학</p>
+                    <p>김선호</p>
+                    <p>상상출판</p>
+                    <p>2020년 11월 20일</p>
+                    <p>13,320원</p>
+                    <p>베테랑 초등교사이자 초등교육 전문가 김선호가 학급과 가정에서 직접 효과를 봤던 자녀 교육에</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>             
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book2.jpg" alt=""></span>
+                    <p>알록달록 마노의 일러스트 자수</p>
+                    <p>류승희(마노자수)</p>
+                    <p>책밥</p>
+                    <p>2020년 10월 28일</p>
+                    <p>16,200원</p>
+                    <p>스페인어로 '손'을 뜻하는 '마노(mano)'에서 예명을 따온 이 책의 저자'마노자수'</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book14.jpg" alt=""></span>
+                    <p>맛있는 홍차를 집에서 즐기는 책</p>
+                    <p>야마다 사카에</p>
+                    <p>북커스</p>
+                    <p>2020년 10월 26일</p>
+                    <p>15,300원</p>
+                    <p>없음</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book4.jpg" alt=""></span>
+                    <p>타인의 속마음, 심리학자들의 명언700</p>
+                    <p>김태현</p>
+                    <p>리텍콘텐츠</p>
+                    <p>2020년 11월 02일</p>
+                    <p>13,950원</p>
+                    <p>이 책은 심리학자들의 명얼을 통해 인감탐구와 타인의 속마음 파악에 대한 통찰을 제공함</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book5.jpg" alt=""></span>
+                    <p>행정법총론 기출문제집 세트(2021)(써니)(전2권)</p>
+                    <p>박준철</p>
+                    <p>에스티유니타스</p>
+                    <p>2020년 10월 26일</p>
+                    <p>36,900원</p>
+                    <p>14년간(2007~2020년)필수 기출문제 수록, 단원별(강별)구성으로 기본서</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book6.jpg" alt=""></span>
+                    <p>모두의 자바</p>
+                    <p>강경미</p>
+                    <p>길벗</p>
+                    <p>2020년 10월 30일</p>
+                    <p>18,000원</p>
+                    <p><자바는 어렵다> 자바나 프로그래밍을 모드더라도 혼자서 배워볼 수는 없을까?</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book7.jpg" alt=""></span>
+                    <p>과학을 아우르는 스토리텔링</p>
+                    <p>랜디 올슨</p>
+                    <p>북스힐</p>
+                    <p>2020년 09월 25일</p>
+                    <p>14,400원</p>
+                    <p>왜 내가 이야기만 하면 모두들 조는 것일까? 과학 연구를 재미있게 청중들에게 전달할 수 있</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book8.jpg" alt=""></span>
+                    <p>드래곤볼 슈퍼. 13</p>
+                    <p>토리야마 아키라(원작)</p>
+                    <p>서울미디어코믹스(DCW)</p>
+                    <p>2020년 10월 20일</p>
+                    <p>4,500원</p>
+                    <p>★ 드디어 성사된 모로와의 재대결!! 메르스와의 수련, 그 성과는?! 지구로 쳐들어 온 모</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book9.jpg" alt=""></span>
+                    <p>지니어스 라이프</p>
+                    <p>맥스 루가비어</p>
+                    <p>니들북</p>
+                    <p>2020년 10월 20일</p>
+                    <p>15,750원</p>
+                    <p>★ <뉴욕타임스> 베스트셀러 작가 ★ 아이튠즈 건강 분야 팟캐스트 1위!</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span><img src="./images/book10.jpg" alt=""></span>
+                    <p>대통령이 사라졌다. 1</p>
+                    <p>빌 클린턴</p>
+                    <p>베리타스</p>
+                    <p>2020년 10월 28일</p>
+                    <p>12,420원</p>
+                    <p>없음</p>
+                    <button id="delete"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
